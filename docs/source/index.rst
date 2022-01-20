@@ -1,22 +1,9 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to the Cloud CIX user guide!
+====================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+This website is a user manual for beginners getting setup with the Cloud CIX platform, taking you through setting up an account, creating a virtual machine and installing basic unix tools to begin planning your own bioinformatics workflows.
 
 .. note::
 
-   This project is under active development.
+   If any of the URLs or code blocks no longer work please open an issue at `https://github.com/BarryDigby/Cloud_CIX/issues`_ describing both the error and location of the error. Please refrain from posting technical questions to the issue tracker.
 
-Contents
---------
-
-.. toctree::
-
-   usage
-   api
