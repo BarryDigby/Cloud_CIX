@@ -1,2 +1,2 @@
-Virtual Machine9
-================
+Cloud CIX Virtual Machines
+==========================
