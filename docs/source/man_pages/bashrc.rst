@@ -50,7 +50,7 @@ If you want to retrieve the most recent commands that began with ``ls``, instead
 
 3. Source both your ``~/.bashrc`` and ``~/.inputrc`` file: 
 
-  .. code-block:: bash
+  .. code-block:: console
 
       source ~/.bashrc
       bind -f ~/.inputrc
