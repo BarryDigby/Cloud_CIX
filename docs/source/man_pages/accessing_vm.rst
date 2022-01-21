@@ -21,10 +21,9 @@ In your terminal, use ``ssh`` to connect to your VM:
 
     ``barry@nuig:~$`` represents my local machine in the code blocks below.
 
-.. code-block:: bash
+.. code-block:: console
 
     barry@nuig:~$ ssh administrator@217.74.56.73
-
     The authenticity of host '217.74.56.73 (217.74.56.73)' can't be established.
     ECDSA key fingerprint is SHA256:nMur4w2J4PupYEaeEzZx15wFN3CceCb1XKhGPokvGkQ.
     Are you sure you want to continue connecting (yes/no/[fingerprint])? 
@@ -36,7 +35,7 @@ Changing login details
 
 We can make our own login details allowing us to specify the username and password for our account by adding a new user to the VM:
 
-.. code-block:: bash
+.. code-block:: console
 
     administrator@ubuntu:~$ sudo adduser barry
     Adding user `barry' ...
@@ -59,7 +58,7 @@ We can make our own login details allowing us to specify the username and passwo
 
 Verify that your username was created: 
 
-.. code-block:: bash
+.. code-block:: console
 
     administrator@ubuntu:~$ compgen -u
     root
@@ -97,65 +96,53 @@ Verify that your username was created:
 
 Now make sure that the user you created has ``sudo`` privelages by adding them to the group:
 
-.. code-block:: bash
+.. code-block:: console
 
     administrator@ubuntu:~$ sudo usermod -aG sudo barry
 
 Test that the new user has been created successfully by logging out of your current session and signing in using the new details you have provided:
 
-.. code-block:: bash
+.. code-block:: console
 
     administrator@ubuntu:~$ exit
 
-.. code-block:: bash
+.. code-block:: console
+
     barry@nuig:~$ ssh barry@217.74.56.73
     barry@217.74.56.73's password:
 
 Double check that we are allowed to perform an action using ``sudo``:
 
-.. code-block:: bash
+.. code-block:: console
 
     barry@ubuntu:~$ sudo ls /home/
     [sudo] password for barry:
     adminstrator barry
 
-If you want, you can delete the directory `/home/administrator` if you do not plan on using it ever again.
+If you want, you can delete the directory ``/home/administrator`` if you do not plan on using it ever again.
 
+Only change password
+--------------------
 
+If you do not care about using the ``administrator`` username, you can change the ``administrator`` password by running:
 
+.. code-block:: console 
 
-
-
-
-
-
-
-
-
-
-
-
-Changing password
------------------
-
-Once you have logged into the VM, you can change your login password to something that is not a randomnly generated alphanumerical string.
-
-.. code-block:: bash 
-
-    sudo passwd administrator
-
-Follow the onscreen prompts. Exit your VM session by typing ``exit`` and test that the new password works on login.
-
-I would like to be able to at a minimum, change the password associated with our VM. 
-
-I tried running the following: 
-
-.. code-block:: bash 
-
-    administrator@ubuntu:~$ sudo passwd
+    administrator@ubuntu:~$ sudo passwd administrator
     [sudo] password for administrator: 
     New password: 
     Retype new password: 
     passwd: password updated successfully
 
-but the changes were not saved when I logged out 
+Exit your VM session and sign in using your new password:
+
+.. code-block:: console
+
+    administrator@ubuntu:~$ exit
+
+.. code-block:: console
+
+    barry@nuig:~$ ssh administrator@217.74.56.73
+    administrator@217.74.56.49's password: 
+
+Done!
