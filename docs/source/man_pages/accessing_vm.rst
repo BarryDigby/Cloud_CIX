@@ -30,8 +30,8 @@ In your terminal, use ``ssh`` to connect to your VM:
 
 Type ``yes`` and enter to accept the ``rsa2 key fingerprint``, and then enter the password which was sent via email. 
 
-Changing login details
-----------------------
+Changing username & password
+----------------------------
 
 We can make our own login details allowing us to specify the username and password for our account by adding a new user to the VM:
 
@@ -121,8 +121,8 @@ Double check that we are allowed to perform an action using ``sudo``:
 
 If you want, you can delete the directory ``/home/administrator`` if you do not plan on using it ever again.
 
-Only change password
---------------------
+Changing password only
+----------------------
 
 If you do not care about using the ``administrator`` username, you can change the ``administrator`` password by running:
 
