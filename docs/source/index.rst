@@ -10,7 +10,18 @@ This website is a user manual for beginners getting setup with the Cloud CIX pla
 List of contents
 *******************************
 
-1. `Cloud CIX Virtual Machines`_.
+1. :doc:`/man_pages/virtual_machine <Creating a virtual machine>`.
+
+2. :doc:`/man_pages/virtual_machine`.
+
+3. :doc:`virtual_machine`.
+
+- :doc:`Creating a virtual machine </man_pages/virtual_machine>`.
+
+- :doc:`/man_pages/virtual_machine`.
+
+- :doc:`virtual_machine`.
+
 
 .. toctree::
    :maxdepth: 2
@@ -18,3 +29,4 @@ List of contents
    :hidden:
 
    /man_pages/virtual_machine
+   /man_pages/accessing_vm
