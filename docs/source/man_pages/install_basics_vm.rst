@@ -1,18 +1,23 @@
-Installing Basic Tools
-======================
+Installing Basics
+=================
 
-You will need to download some basic tools before you even begin to try and start planning your bioinformatics workflow. 
+The cloud computing core are curating a list of tools and software that are essential for running/installing/editing bioinformatics worflows. The idea here is to provide you with a single command to download and install tools and software that are used everyday by bioinformaticians, saving you the headache of manually installing them yourself.
 
-I have began curating a list of essentials that should be available to users 'out of the box' to help you get started. 
+This list does not contain specific genomics tools such as ``samtools``, rather we will provide you with the tools needed to download your own version of samtools etc. 
 
 .. note::
 
-    If you have suggestions on what tools and software to add, please open an issue at `https://github.com/BarryDigby/Cloud_CIX/issues <https://github.com/BarryDigby/Cloud_CIX/issues>`_.
+    If you have suggestions on what tools and software to add, please open an issue at `https://github.com/BarryDigby/Cloud_CIX/issues <https://github.com/BarryDigby/Cloud_CIX/issues>`_ and the request will be reviewed. A good example would be ``pip``, a poor example would be ``GATK``. 
 
 .. code-block:: console
 
-    sudo apt-get update; 
-    sudo apt-get clean all;
-    sudo apt-get --yes install \
-
-    # 
+    vim
+    default-jre
+    git
+    unzip
+    tar
+    wget
+    curl
+    python-dev
+    pip
+    

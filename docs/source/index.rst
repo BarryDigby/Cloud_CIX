@@ -14,7 +14,14 @@ List of contents
 
 - :doc:`Logging in to your virtual machine </man_pages/accessing_vm>`.
 
-- :doc:`Installing basics for your virtual machine </man_pages/setting_up_vm>`
+- :doc:`Installing basics for your virtual machine </man_pages/install_basics_vm>`.
+
+- :doc:`Tips for customising your UX <man_pages/bashrc>`
+
+- :doc:`Installing packages using Conda </man_pages/install_conda>`.
+
+- :doc:`Installing packages from source </man_pages/install_source>`.
+
 
 .. toctree::
    :maxdepth: 2
@@ -30,3 +37,4 @@ List of contents
    :hidden:
 
    /man_pages/install_basics_vm
+   /man_pages/bashrc
