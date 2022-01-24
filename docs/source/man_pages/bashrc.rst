@@ -1,5 +1,5 @@
-Tips for customising your UX
-============================
+Tips for customising your shell
+===============================
 
 When you first log into your VM, your profile will essentially be a clean slate. Below are some tips to get your bash profile off the ground. 
 

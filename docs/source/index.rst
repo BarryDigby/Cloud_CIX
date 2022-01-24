@@ -10,31 +10,48 @@ This website is a user manual for beginners getting setup with the Cloud CIX pla
 List of contents
 *******************************
 
-- :doc:`Creating a virtual machine </man_pages/virtual_machine>`.
+- :doc:`Creating a virtual machine </man_pages/virtual_machine>`
 
-- :doc:`Logging in to your virtual machine </man_pages/accessing_vm>`.
+- :doc:`Logging in to your virtual machine </man_pages/accessing_vm>`
 
-- :doc:`Installing basics for your virtual machine </man_pages/install_basics_vm>`.
+- :doc:`Installing basics for your virtual machine </man_pages/install_basics_vm>`
 
-- :doc:`Tips for customising your UX <man_pages/bashrc>`
+- :doc:`Tips for customising your terminal <man_pages/bashrc>`
 
-- :doc:`Installing packages using Conda </man_pages/install_conda>`.
+- :doc:`Installing package managers </man_pages/package_managers>`
 
-- :doc:`Installing packages from source </man_pages/install_source>`.
+- :doc:`Installing container clients </man_pages/containers>`
+
+- :doc:`Installing tools & creating projects </man_pages/install_tools>`
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Cloud CIX VM Login
+   :maxdepth: 3
+   :caption: Cloud CIX Virtual Machine
    :hidden:
 
    /man_pages/virtual_machine
    /man_pages/accessing_vm
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Configuring your VM
-   :hidden:
-
    /man_pages/install_basics_vm
    /man_pages/bashrc
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Install Package managers
+   :hidden:
+
+   /man_pages/package_managers
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Install Container Clients
+   :hidden:
+
+   /man_pages/containers
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Installing Tools
+   :hidden:
+
+   /man_pages/install_tools

@@ -11,13 +11,16 @@ This list does not contain specific genomics tools such as ``samtools``, rather 
 
 .. code-block:: console
 
-    vim
-    default-jre
-    git
-    unzip
-    tar
-    wget
-    curl
-    python-dev
-    pip
-    
+    sudo apt-get update && sudo apt-get upgrade \\
+    sudo apt-get -y install vim \\
+                            git \\
+                            default-jre \\
+                            unzip \\
+                            tar \\
+                            nano \\
+                            pip \\
+                            build-essentials \\
+                            gcc-multilib \\
+                            libncurses-dev
+
+
