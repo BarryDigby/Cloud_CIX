@@ -21,6 +21,10 @@ This list does not contain specific genomics tools such as ``samtools``, rather 
                             pip \\
                             build-essentials \\
                             gcc-multilib \\
-                            libncurses-dev
+                            libncurses-dev \\
+                            tmux \\
+                            htop \\
+                            curl \\
+                            ncdu 
 
 
