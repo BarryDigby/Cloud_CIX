@@ -27,9 +27,23 @@ Should look like:
 Optimise history search
 -----------------------
 
-As it stands, using the up arrow and down arrow keys will cycle through the latest commands in your ``history``. 
+As it stands, using the up arrow and down arrow keys will cycle through the latest commands in your ``history``:
 
-If you want to retrieve the most recent commands that began with ``ls``, instead of the most recent commands by time, follow the below instructions:
+.. figure:: /_static/gifs/pre-autocomplete.gif
+   :figwidth: 700px
+   :target: /_static/gifs/pre-autocomplete.gif
+   :align: center
+
+|
+
+You can optomise your search history to return commands using a string as a REGEX pattern - see the example below cycling through old commands that begin with ``wc``:
+
+.. figure:: /_static/gifs/post-autocomplete.gif
+   :figwidth: 700px
+   :target: /_static/gifs/post-autocomplete.gif
+   :align: center
+
+|
 
 1. Create the ``~/.inputrc`` file and include the contents:
 
