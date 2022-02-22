@@ -27,7 +27,7 @@ We have created an interactive shell script to create a valid JSON file for you,
 
 .. code-block:: console
 
-    wget https://gist.githubusercontent.com/BarryDigby/695e366914456f67308deac858fd558b/raw/be0c24d7aebbfeb88e9494caf90b69f92c745937/cix_gen.sh && bash cix_gen.sh
+    wget https://gist.githubusercontent.com/BarryDigby/695e366914456f67308deac858fd558b/raw/a6161e6b2cb343544c69d8153ef3c3617f34e5de/cix_gen.sh && bash cix_gen.sh
 
 Follow the onscreen prompts to fill out a template JSON file:
 
