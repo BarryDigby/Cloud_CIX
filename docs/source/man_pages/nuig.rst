@@ -1,5 +1,5 @@
-NUIG users
-==========
+Access from campus
+==================
 
 Due to the cyberattack, eduroam does not currently support ``ssh`` connections, only ``https`` connections.
 
