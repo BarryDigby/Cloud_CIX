@@ -10,7 +10,11 @@ To circumvent this massive PITA we will connect to our VM using lugh, which allo
 Ethernet Cable users
 --------------------
 
-For those using ethernet cables, step through the following code blocks to change your routing table:
+For those using ethernet cables, step through the following code blocks to change your routing table. 
+
+This will let you connect to lugh and the internet at the same time which is better than the current state. 
+
+VPN users can skip to obtaining an IP address from Lugh. 
 
 
 Check your routing tables
@@ -19,7 +23,7 @@ Check your routing tables
 When connected to eduroam, run ``route -n`` to check your routing tables. We will use this against your tables when the ethernet cable is connected to identify the connection. 
 
 .. code-block:: bash
-    
+
     barry@YT-1300:/data$ route -n
     Kernel IP routing table
     Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
