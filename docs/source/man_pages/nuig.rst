@@ -93,15 +93,15 @@ You can create a VM using the cloud cix website or the `JSON generator <https://
 
 |
 
-.. note:: The script automatically creates a firewall rule allowing your current connection to access the VM. This works well at home, but will not work on eduroam. We need to provide the public IP address assiciated with lugh to the script by entering it manually.
+.. note:: The script automatically creates a firewall rule allowing your current connection to access the VM. This works well at home, but will not work on eduroam. We need to provide the public IP address associated with lugh to the script by entering it manually.
 
 The script adds ``/24`` to the IP address entered manually - this means that the final 2 fields of the IP address accept all IP addresses in the range of 1-255:
 
-* ``140.203.226.172/32`` : Accepts only ``140.203.226.172``.
+* ``140.203.226.172/32`` = accepts IP address ``140.203.226.172``.
 
-* ``140.203.226.172/24`` : Accepts ``140.203.226.1-255``.
+* ``140.203.226.172/24`` = accepts IP address in ranges ``140.203.226.1-255``.
 
-* ``140.203.226.172/1611`` : Accepts ``140.203.1-255.1-255``
+* ``140.203.226.172/1611`` = accepts IP address in ranges ``140.203.1-255.1-255``
 
 and so on.. 
 
