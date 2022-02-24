@@ -183,6 +183,6 @@ Once you recieve an email from cloud cix with your VM login details, you can acc
 
 Nice :) 
 
-***
+|
 
 Many thanks to Brian O'Sullivan and Declan Bennett
