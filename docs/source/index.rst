@@ -37,6 +37,13 @@ List of contents
 
 .. toctree::
    :maxdepth: 3
+   :caption: NUIG users
+   :hidden:
+
+   /man_pages/nuig
+
+.. toctree::
+   :maxdepth: 3
    :caption: Install Package managers
    :hidden:
 
