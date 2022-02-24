@@ -84,7 +84,7 @@ The public IP address associated with lugh is ``140.203.12.52`` - we will need t
 Fill JSON file
 --------------
 
-You can create a VM using the cloud cix website or the `<https://gist.github.com/BarryDigby/695e366914456f67308deac858fd558b> JSON generator`_ which makes every effort to simplify the process for you. 
+You can create a VM using the cloud cix website or the `JSON generator <https://gist.github.com/BarryDigby/695e366914456f67308deac858fd558b>`_ which makes every effort to simplify the process for you. 
 
 .. figure:: /_static/gifs/lugh_test.gif
    :figwidth: 700px
