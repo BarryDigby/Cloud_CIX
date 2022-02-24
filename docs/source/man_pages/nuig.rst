@@ -19,6 +19,7 @@ Check your routing tables
 When connected to eduroam, run ``route -n`` to check your routing tables. We will use this against your tables when the ethernet cable is connected to identify the connection. 
 
 .. code-block:: bash
+    
     barry@YT-1300:/data$ route -n
     Kernel IP routing table
     Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
@@ -31,6 +32,7 @@ When connected to eduroam, run ``route -n`` to check your routing tables. We wil
 Now plug in your ethernet cable and re-run the command:
 
 .. code-block:: bash
+
     barry@YT-1300:/data$ route -n
     Kernel IP routing table
     Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
@@ -52,6 +54,7 @@ Permit both internet access and ssh access
 To allow your laptop to connect to both the internet and lugh at the same time (also syd), run the following lines of code substituting your gateway router IP address in place of ``10.209.22.1``.
 
 .. code-block:: bash
+
     sudo ip route add 140.203.137.28 via 10.209.22.1;
     sudo ip route add 10.80.222.10 via 10.209.22.1;
     sudo ip route del default via 10.209.22.1
@@ -64,6 +67,7 @@ Thanks to Brian O'Sullivan for walking through this with me.
 Create an alias for this command - you need to run it everytime the ethernet connection is disrupted. Name it after the building you are in!
 
 .. code-block:: bash
+
     alias IT_routing="sudo ip route add 140.203.137.28 via 10.209.22.1; sudo ip route add 10.80.222.10 via 10.209.22.1; sudo ip route del default via 10.209.22.1"
 
 
@@ -75,6 +79,7 @@ This is straight forward - connect to lugh and run the command ``curl "https://i
 .. note:: Once again, your result may differ significantly based on your location on campus. 
 
 .. code-block:: bash
+
     bdigby@lugh:/data/bdigby$ curl "https://ipinfo.io/ip"
     140.203.12.52bdigby@lugh:/data/bdigby$ 
 
@@ -132,6 +137,7 @@ Once you recieve an email from cloud cix with your VM login details, you can acc
 .. note:: the IP address to ssh to is found under View > VMs > Network > Public IP 
 
 .. code-block:: bash
+
     barry@YT-1300:/data$ ssh bdigby@lugh.nuigalway.ie
     bdigby@lugh.nuigalway.ie's password: 
     Last login: Thu Feb 24 17:43:05 2022 from 10.209.22.137
