@@ -129,4 +129,60 @@ Access VM via Lugh
 
 Once you recieve an email from cloud cix with your VM login details, you can access your VM via lugh.
 
+.. note:: the IP address to ssh to is found under View > VMs > Network > Public IP 
+
 ```bash
+barry@YT-1300:/data$ ssh bdigby@lugh.nuigalway.ie
+bdigby@lugh.nuigalway.ie's password: 
+Last login: Thu Feb 24 17:43:05 2022 from 10.209.22.137
+               ,
+              (@|
+ ,,           ,)|_____________________________________
+//\\8@8@8@8@8@8 / _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \
+\\//8@8@8@8@8@8 \_____________________________________/
+ ``           `)|
+              (@|
+               `
+                  _                _     
+                 | |   _   _  __ _| |__  
+                 | |  | | | |/ _` | '_ \ 
+                 | |__| |_| | (_| | | | |
+                 |_____\__,_|\__, |_| |_|
+                             |___/       
+               ,
+              (@|
+ ,,           ,)|_____________________________________
+//\\8@8@8@8@8@8 / _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \
+\\//8@8@8@8@8@8 \_____________________________________/
+ ``           `)|
+              (@|
+               `
+
+bdigby@lugh:/data/bdigby$ ssh administrator@217.74.56.142
+Warning: Permanently added '217.74.56.142' (ECDSA) to the list of known hosts.
+administrator@217.74.56.142's password: 
+Welcome to Ubuntu 20.04 LTS (GNU/Linux 5.4.0-26-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+administrator@ubuntu:~$ 
+```
+
+
+Nice :) 
+
+***
+
+Many thanks to Brian O'Sullivan and Declan Bennett
