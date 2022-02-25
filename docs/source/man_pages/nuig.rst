@@ -14,7 +14,7 @@ For those using ethernet cables, step through the following code blocks to chang
 
 This will let you connect to lugh and the internet at the same time which is better than the current state. 
 
-VPN users can skip to obtaining an IP address from Lugh. 
+**VPN users can skip to obtaining an IP address from Lugh.**
 
 
 Check your routing tables
