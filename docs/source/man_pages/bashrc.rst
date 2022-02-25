@@ -3,6 +3,17 @@ Tips for customising your shell
 
 When you first log into your VM, your profile will essentially be a clean slate. Below are some tips to get your bash profile off the ground. 
 
+~/.vimrc
+--------
+
+Create the `~/.vimrc` file and add the following lines to it:
+
+.. code-block:: bash
+
+    set nocompatible
+    set belloff=all
+    set backspace=indent,eol,start
+
 Terminal Colors
 ---------------
 
