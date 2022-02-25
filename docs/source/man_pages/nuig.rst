@@ -110,7 +110,7 @@ The script adds ``/24`` to the IP address entered manually - this means that the
 
 * ``140.203.226.172/24`` = accepts IP address in ranges ``140.203.226.1-255``.
 
-* ``140.203.226.172/1611`` = accepts IP address in ranges ``140.203.1-255.1-255``
+* ``140.203.226.172/16`` = accepts IP address in ranges ``140.203.1-255.1-255``
 
 and so on.. 
 
