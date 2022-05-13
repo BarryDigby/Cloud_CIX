@@ -1,0 +1,27 @@
+name: CI
+# Workflow to test installations of Conda, Singularity, Docker and Nextflow.
+# Runs the script without user prompts.
+on:
+  push:
+    branches:
+      - 2-vm-setup
+  pull_request:
+  release:
+    types: [published]
+
+jobs:
+  test:
+    name: Run workflow tests
+    # Only run on push if this is the nf-core dev branch (merged PRs)
+    if: ${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == 'BarryDigby/Cloud_CIX') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pipeline code
+        uses: actions/checkout@v2.4.0
+
+      - name: Run installer
+        with:
+          FILES: |
+            vm-setup.sh
+        run: |
+          bash vm-setup.sh
