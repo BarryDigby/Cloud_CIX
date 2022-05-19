@@ -74,11 +74,11 @@ docker --version
 
 # Nextflow
 
-    wget -nv https://github.com/nextflow-io/nextflow/releases/download/v21.12.1-edge/nextflow && chmod 777 ./nextflow
+wget -nv https://github.com/nextflow-io/nextflow/releases/download/v21.12.1-edge/nextflow && chmod 777 ./nextflow
 
-    ./nextflow -v
+./nextflow -v
 
-    sudo mv ./nextflow /usr/bin/
+sudo mv ./nextflow /usr/bin/
 
 # Anaconda
 
@@ -96,5 +96,6 @@ sudo apt-get -y install libgl1-mesa-glx \
         libxml2-dev
 
 wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
-yes | bash Anaconda3-2021.05-Linux-x86_64.sh
-
+bash ./Anaconda3-2021.05-Linux-x86_64.sh -b -p $HOME/anaconda
+conda init
+conda config --set auto_activate_base false
