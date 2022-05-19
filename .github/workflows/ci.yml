@@ -15,7 +15,7 @@ jobs:
     # Only run on push if this is the nf-core dev branch (merged PRs)
     env:
       REPO: BarryDigby/Cloud_CIX
-    if: ${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == "$REPO") }}
+    if: ${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == REPO }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out pipeline code
