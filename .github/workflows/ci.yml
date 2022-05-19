@@ -14,7 +14,7 @@ jobs:
     name: Run workflow tests
     # Only run on push if this is the nf-core dev branch (merged PRs)
     env:
-      REPO = "BarryDigby/Cloud_CIX"
+      REPO: BarryDigby/Cloud_CIX
     if: ${{ github.event_name != 'push' || (github.event_name == 'push' && github.repository == $REPO) }}
     runs-on: ubuntu-latest
     steps:
