@@ -67,6 +67,11 @@ echo \
         $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+docker --version
+
 # Nextflow
 
     wget -nv https://github.com/nextflow-io/nextflow/releases/download/v21.12.1-edge/nextflow && chmod 777 ./nextflow
