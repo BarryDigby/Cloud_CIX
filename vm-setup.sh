@@ -53,6 +53,8 @@ export VERSION=3.8.4 && \
 
         cd ..
 
+singularity --version >> versions.txt
+
 # docker
 
 sudo apt-get update && sudo apt-get install -y\
@@ -70,7 +72,7 @@ echo \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-docker --version
+docker -v >> versions.txt
 
 # Nextflow
 
@@ -79,6 +81,8 @@ wget -nv https://github.com/nextflow-io/nextflow/releases/download/v21.12.1-edge
 ./nextflow -v
 
 sudo mv ./nextflow /usr/bin/
+
+nextflow -v >> versions.txt
 
 # Anaconda
 
@@ -99,3 +103,5 @@ wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 bash ./Anaconda3-2021.05-Linux-x86_64.sh -b -p $HOME/anaconda
 conda init
 conda config --set auto_activate_base false
+
+conda --version >> versions.txt
