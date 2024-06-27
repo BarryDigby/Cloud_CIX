@@ -140,7 +140,7 @@ Once you recieve an email from cloud cix with your VM login details, you can acc
 
 .. note:: the IP address to ssh to is found under View > VMs > Network > Public IP 
 
-.. code-block:: bash
+.. code-block:: 
 
     barry@YT-1300:/data$ ssh bdigby@lugh.nuigalway.ie
     bdigby@lugh.nuigalway.ie's password: 
@@ -153,7 +153,7 @@ Once you recieve an email from cloud cix with your VM login details, you can acc
     ``           `)|
                 (@|
                 `
-                    _                _     
+                     _                _     
                     | |   _   _  __ _| |__  
                     | |  | | | |/ _` | '_ \ 
                     | |__| |_| | (_| | | | |

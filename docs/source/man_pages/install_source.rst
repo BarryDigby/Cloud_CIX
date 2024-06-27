@@ -12,7 +12,7 @@ These rare unicorns do not require any compilation, you just have to download th
 
 See below for an example using the ``nextflow`` executable:
 
-#. Navigate to the ``nextflow`` github repository, and view the `latest releases <https://github.com/nextflow-io/nextflow/releases>`_.
+#. Navigate to the ``nextflow`` github repository, and view the `latest releases <https://github.com/nextflow-io/nextflow/releases>`__.
 
 .. code-block:: console
 
