@@ -24,6 +24,8 @@ List of contents
 
 - :doc:`Installing tools & creating projects </man_pages/install_tools>`
 
+- :doc:`Using your virtual machine to host Posit tools (Shiny apps/RStudio server)   </man_pages/hosting_rshiny_app>`
+
 
 .. toctree::
    :maxdepth: 3
@@ -62,3 +64,10 @@ List of contents
    :hidden:
 
    /man_pages/install_tools
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Hosting Posit tools
+   :hidden:
+
+   /man_pages/hosting_rshiny_app
