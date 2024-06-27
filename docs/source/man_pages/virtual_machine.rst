@@ -9,7 +9,7 @@ The video below demonstrates how to create a VM using the Cloud CIX GUI builder.
 .. raw:: html
 
     <embed>
-        <iframe width="700" height="390" src="https://www.youtube.com/embed/_p7JsWF-jZk" title="YouTube video player" frameborder="0" allow="accelerometer" allowfullscreen></iframe>
+        <iframe width="700" height="390" src="https://www.youtube.com/embed/5g77vt09SuM" title="YouTube video player" frameborder="0" allow="accelerometer" allowfullscreen></iframe>
     </embed>
 
 |
