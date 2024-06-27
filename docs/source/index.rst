@@ -64,6 +64,8 @@ List of contents
    :hidden:
 
    /man_pages/install_tools
+   /man_pages/install_source
+   /man_pages/install_container
 
 .. toctree::
    :maxdepth: 3
