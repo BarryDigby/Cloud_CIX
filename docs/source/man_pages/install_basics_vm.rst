@@ -11,20 +11,20 @@ This list does not contain specific genomics tools such as ``samtools``, rather 
 
 .. code-block:: console
 
-    sudo apt-get update && sudo apt-get upgrade \\
-    sudo apt-get -y install vim \\
-                            git \\
-                            default-jre \\
-                            unzip \\
-                            tar \\
-                            nano \\
-                            pip \\
-                            build-essentials \\
-                            gcc-multilib \\
-                            libncurses-dev \\
-                            tmux \\
-                            htop \\
-                            curl \\
+    sudo apt-get update && sudo apt-get upgrade \
+    sudo apt-get -y install vim \
+                            git \
+                            default-jre \
+                            unzip \
+                            tar \
+                            nano \
+                            pip \
+                            build-essential \
+                            gcc-multilib \
+                            libncurses-dev \
+                            tmux \
+                            htop \
+                            curl \
                             ncdu 
 
 
