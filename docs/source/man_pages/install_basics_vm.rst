@@ -1,7 +1,7 @@
 Installing Basics
 =================
 
-The cloud computing core are curating a list of tools and software that are essential for running/installing/editing bioinformatics worflows. The idea here is to provide you with a single command to download and install tools and software that are used everyday by bioinformaticians, saving you the headache of manually installing them yourself.
+The cloud computing core are curating a list of tools and software that are essential for running/installing/editing bioinformatics workflows. The idea here is to provide you with a single command to download and install tools and software that are used everyday by bioinformaticians, saving you the headache of manually installing them yourself.
 
 This list does not contain specific genomics tools such as ``samtools``, rather we will provide you with the tools needed to download your own version of samtools etc. 
 

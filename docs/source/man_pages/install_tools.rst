@@ -1,30 +1,88 @@
 Introduction
 ============
 
-If you need to download a tool to do a quick and dirty job, there's more than one way to skin a cat. Below are examples using installations from source code, the conda repository and container registries using singularity and docker, respectively. 
+If you need to download a tool to do a quick and dirty job, there's more than one way to skin a cat. Below are examples of a few different methods of installation:
 
+1. `Using ready-made executables`_
+2. `Compiling from source code`_
+3. `Via the Conda repository`_
+4. `Using Singularity`_
+5. `Using Docker`_
 
-Via Source
-----------
+Using ready-made executables
+--------------------------------
+These rare unicorns do not require any compilation, you just have to download the executable and place it in your ``$PATH``. 
+
+See below for an example using the ``nextflow`` executable:
+
+#. Navigate to the ``nextflow`` github repository, and view the `latest releases <https://github.com/nextflow-io/nextflow/releases>`__.
+
+.. code-block:: bash
+
+    wget -nv https://github.com/nextflow-io/nextflow/releases/download/v21.12.1-edge/nextflow && chmod 777 ./nextflow
+
+    ./nextflow -v
+
+    mv ./nextflow /usr/bin/
+
+You can now access the ``nextflow`` executable anywhere on your VM. 
+
+Compiling from source code
+------------------------------
+The vast majority of bioinformatics tools are written in ``C`` or ``C++``. It is worthwhile knowing how to compile these tools manually. 
+
+We will install ``samtools`` from source:
 
 Naviagte to the ``samtools`` github repository, and view the `latest releases <https://github.com/samtools/samtools/releases>`_.
 
 .. code-block:: bash
 
-    wget -nv wget https://github.com/samtools/samtools/releases/download/1.14/samtools-1.14.tar.bz2
+    wget -nv https://github.com/samtools/samtools/releases/download/1.14/samtools-1.14.tar.bz2
 
     tar -xf samtools-1.14.tar.bz2
-
+    
     cd samtools-1.14/
-
+   
     make
 
     ./samtools --version 
 
     mv samtools /usr/bin
 
-Via Conda
----------
+.. warning:: 
+    You may run into errors here if you don't have the neccessary libraries installed
+
+Installation instructions are usually in the ``README`` file, quite simple to follow:
+
+.. code-block:: 
+
+    Building samtools
+    =================
+
+    The typical simple case of building Samtools using the HTSlib bundled within
+    this Samtools release tarball is done as follows:
+
+        cd .../samtools-1.14 # Within the unpacked release directory
+        ./configure
+        make
+
+    You may wish to copy the resulting samtools executable into somewhere on your
+    $PATH, or run it where it is.
+
+    Rather than running-in-place like that, the next simplest typical case is to
+    install samtools etc properly into a directory of your choosing.  Building for
+    installation using the HTSlib bundled within this Samtools release tarball,
+    and building the various HTSlib utilities such as bgzip is done as follows:
+
+        cd .../samtools-1.14 # Within the unpacked release directory
+        ./configure --prefix=/path/to/location
+        make all all-htslib
+        make install install-htslib
+
+The main thing to look out for is the ``Makefile`` for compiling ``C`` code.
+
+Via the Conda repository
+----------------------------
 
 Create an environment and install ``samtools``.
 
@@ -38,8 +96,8 @@ Create an environment and install ``samtools``.
 
     conda deactivate
 
-Via Singularity
----------------
+Using Singularity
+-----------------
 
 There are plenty of container images for ``samtools`` available.
 
@@ -54,8 +112,8 @@ The syntax for downloading from ``quay.io`` is as follows: ``docker://quay.io/bi
 
     samtools --version
 
-Via Docker
-----------
+Using Docker
+------------
 
 Similar to ``singularity``, but downloaded as an image and not a 'physical' file you can move.
 

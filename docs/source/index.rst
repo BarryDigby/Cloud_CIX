@@ -26,6 +26,8 @@ List of contents
 
 - :doc:`Using your virtual machine to host Posit tools </man_pages/hosting_rshiny_app>`
 
+- :doc:`Adding content to this guide </man_pages/contributing>`
+
 
 .. toctree::
    :maxdepth: 3
@@ -73,3 +75,11 @@ List of contents
    :hidden:
 
    /man_pages/hosting_rshiny_app
+   /man_pages/rstudio_server
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Miscellaneous
+   :hidden:
+
+   /man_pages/contributing
