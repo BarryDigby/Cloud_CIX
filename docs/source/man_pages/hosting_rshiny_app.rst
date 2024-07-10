@@ -6,17 +6,17 @@ For simple apps, 1 CPU, 2 GB RAM and 10 GB storage should be sufficient.
 
 The following firewall rules should be added to your VM to allow the appropiate traffic: 
 
-====== ============== ===================== ======== ==== ====================================================================================
-Action Source         Destination           Protocol Port Explanation of firewall rule
-====== ============== ===================== ======== ==== ====================================================================================
-Allow  your_public_IP 10.0.0.0/24           Any      \-   Grants your IP access to all VMs in CloudCIX project
-Allow  \*             <private_IP_of_VM>/32 TCP      80   Required later for certbot access
-Allow  \*             <private_IP_of_VM>/32 TCP      443  Allows encrypted web traffic access to Shiny app once reverse proxy server is set up
-====== ============== ===================== ======== ==== ====================================================================================
+====== ================== ======================= ======== ==== ====================================================================================
+Action Source             Destination             Protocol Port Explanation of firewall rule
+====== ================== ======================= ======== ==== ====================================================================================
+Allow  ``your_public_IP`` 10.0.0.0/24             Any      \-   Grants your IP access to all VMs in CloudCIX project
+Allow  \*                 ``private_IP_of_VM``/32 TCP      80   Required later for certbot access
+Allow  \*                 ``private_IP_of_VM``/32 TCP      443  Allows encrypted web traffic access to Shiny app once reverse proxy server is set up
+====== ================== ======================= ======== ==== ====================================================================================
 
 `Install Shiny server <https://posit.co/download/shiny-server/>`_ by following the instructions for Ubuntu.
 
-Your Shiny app should now be accessible at the following address: ``<VM_public_IP>:3838/your_shiny_app_name``
+Your Shiny app should now be accessible at the following address: ``VM_public_IP:3838/your_shiny_app_name``
 
 Setting up a reverse proxy server to encrypt traffic (recommended)
 ------------------------------------------------------------------

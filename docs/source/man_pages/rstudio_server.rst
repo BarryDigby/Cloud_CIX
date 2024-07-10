@@ -6,7 +6,7 @@ This guide assumes you have spun up an Ubuntu 20.04 LTS VM on CloudCIX with the 
 `Download and install <https://posit.co/download/rstudio-server/>`_ the appropriate version of RStudio Server (Debian 11/Ubuntu 20) for Ubuntu 20.04 LTS.
 
 RStudio Server should now be accessible at the following address:
-``http://<VM_public_IP>:8787``
+``http://VM_public_IP:8787``
 
 Username and password should be the same as you log in to your VM with.
 
