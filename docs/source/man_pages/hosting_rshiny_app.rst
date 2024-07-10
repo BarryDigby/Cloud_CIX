@@ -16,6 +16,10 @@ Allow  \*                 ``private_IP_of_VM``/32 TCP      443  Allows encrypted
 
 `Install Shiny server <https://posit.co/download/shiny-server/>`_ by following the instructions for Ubuntu.
 
+.. note:: 
+  Installing ``R`` with ``sudo apt-get`` (as specified in the Install Shiny Server instructions above) installs ``R`` version 3.6.3. 
+  If you require a more recent version, you can install ``R`` on Ubuntu from CRAN repository by following method 2 here: https://phoenixnap.com/kb/install-r-ubuntu
+
 Your Shiny app should now be accessible at the following address: ``VM_public_IP:3838/your_shiny_app_name``
 
 Setting up a reverse proxy server to encrypt traffic (recommended)
