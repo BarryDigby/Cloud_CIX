@@ -40,5 +40,17 @@ Setting up a reverse proxy server to encrypt traffic (recommended)
         proxy_pass proxy_pass http://127.0.0.1:8787/;
     }
 
+4. Test that the NGINX configuration is correct by running:
+
+   .. code-block:: bash
+
+    sudo nginx -t
+
+5. If the test is successful, reload NGINX to apply changes:
+  
+   .. code-block:: bash
+
+    sudo systemctl reload nginx
+    
 That's it, you're done! Your RStudio Server should now be accessible at:
 ``https://yourlab.cloudcix.com/``
