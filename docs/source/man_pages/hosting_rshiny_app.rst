@@ -57,3 +57,9 @@ Setting up a reverse proxy server to encrypt traffic (recommended)
     
 That's it, you're done! Your Shiny app should now be accessible at:
 ``https://yourlab.cloudcix.com/your_shiny_app_name``
+
+.. image:: /_static/images/important_figure.png
+   :width: 700px
+   :align: center
+
+|
