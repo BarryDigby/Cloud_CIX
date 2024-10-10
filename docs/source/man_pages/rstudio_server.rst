@@ -37,7 +37,7 @@ Setting up a reverse proxy server to encrypt traffic (recommended)
    .. code-block:: bash
   
     location / {
-        proxy_pass proxy_pass http://127.0.0.1:8787/;
+        proxy_pass http://127.0.0.1:8787/;
     }
 
 4. Test that the NGINX configuration is correct by running:
